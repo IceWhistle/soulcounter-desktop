@@ -17,7 +17,8 @@ The web version is at https://soulcounter.app.
 ## How it works
 
 - Deadlock writes `Lobby … for Match <id> created` to its console log when you load in. Soulcounter reads that line and loads the match into Live mode, which gets the broadcast from [api.deadlock-api.com](https://deadlock-api.com). The feed runs about a minute behind the game.
-- Counter-pick, lane and item stats are the same as on soulcounter.app, refreshed twice a day. The app downloads new numbers by itself and tells you when a new version is out.
+- Counter-pick, lane and item stats are the same as on soulcounter.app, refreshed twice a day, and the app downloads new numbers by itself.
+- The installed app updates itself: new versions download in the background and install once Deadlock is closed. The portable exe tells you when a new version is out.
 - No Overwolf, no memory reading, no injection. Soulcounter only reads the game's text log and public match data.
 
 Soulcounter is a fan-made tool and is not affiliated with Valve.
